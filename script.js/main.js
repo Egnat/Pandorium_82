@@ -33,9 +33,9 @@ const content = "С Новым годом !";
 document.querySelector(".garland-9").insertAdjacentHTML("beforebegin", 
 `<article class="text-friends"> ${content} </article>`);
 const textFriends = document.querySelector('.text-friends');
-  textFriends.style ="font-size: 110px";
+  textFriends.style ="font-size: 129px";
   //textFriends.style.position ="absolute";
-  textFriends.style.width ="933px";
+  //textFriends.style.width ="933px";
   textFriends.style.color = "#ff9800";
   textFriends.style.top = "2773p";
   //textFriends.style.left = "268px";

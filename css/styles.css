@@ -347,7 +347,9 @@ box-shadow: 4px 0px 34px 36px #9358e1;
 
 .text-friends {
   position: absolute;
-  left: 268px;
+  width:1279px;
+  left: 268p;
+  text-align: center;
 }
 
 .garland-9 {
@@ -376,17 +378,17 @@ height: 854px/*100%*/;
 @media screen and (max-width: 1300px) {}
 
 @media screen and (max-width: 1024px) {
-.text-friends { left: 206px; }
+.text-friends { left: 206p; }
 }
 
 @media screen and (max-width: 768px) {
-.text-friends { left: 206px; }
+.text-friends { left: 206p; }
 }
 
 @media screen and (max-width: 425px) {
-.text-friends { left: 206px; }
+.text-friends { left: 206p; }
 }
 
 @media screen and (max-width: 375px) {
-.text-friends { left: 206px; }
+.text-friends { left: 206p; }
 }
