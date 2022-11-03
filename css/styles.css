@@ -345,6 +345,11 @@ box-shadow: 4px 0px 34px 36px #9358e1;
 -index: -1;    
 }
 
+.text-friends {
+  position: absolute;
+  left: 268px;
+}
+
 .garland-9 {
 position: absolute;
 width: 1280px;
