@@ -5,7 +5,7 @@
 
 ::-webkit-scrollbar {
   width : 0.1px; 
-  height: 10px;
+  height: 5px;
   pacity: 0.02;
 } /* УБРАЛ ПОЛОСУ ПРОКРУТКИ С ЭКРАНА и сделал свою. 
 Когда пишу сайт, чтобы на планшете отображалось содержимое от края до края страницы 
@@ -46,6 +46,26 @@ body {
   verflow: hidden;/*убирает полностью прокрутку с экрана*/
   -webkit-resizer: /*— изменение размеров*/
 }
+
+.header {
+ background: #1a1a1a00; 
+}
+
+.navigation {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100p;
+}
+
+.link {
+font-size: 13px;
+font-weight: 400;
+line-height: 15px;
+text-transform: uppercase;
+  color:wheat;
+}
+
 .fly_santa {
 position: absolute;
 top: 770p;
@@ -204,7 +224,8 @@ top: 202px;
 position: absolute;
 top: 53px;
 left: 33px;
-margin: 0;  
+margin: 0;
+cursor: pointer;  
 }
 
 .cat-in-cap {
@@ -249,7 +270,7 @@ position: absolute;
    width: 300px;
     height: 317px;
     top: 397px;
-    left:16px;
+    left:39px;
     box-shadow: 2px 0px 40px 17px #e38a8a;
     border: 11px solid #00b8ff
 }
