@@ -1,3 +1,12 @@
+var str =  'внутренняя инфа о страничке !';
+var a_href = str.bold().fontcolor('yellow').link('JavaScript:alert("Реклама - поздравления 50/50 😁")');
+//const a_href = document.querySelector('a_href');
+/*if (a_href = str.fontcolor('yellow')) {
+  //alert('hi');
+ a_href = str.fontcolor('green');
+}*/
+document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
+
 function blinkeded() {
   const section = document./*getElementById*/querySelector('.continer-salute');
   if (section.style.visibility == "hidden") {

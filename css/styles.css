@@ -47,6 +47,18 @@ body {
   -webkit-resizer: /*— изменение размеров*/
 }
 
+font {
+position: absolute;
+top: 277px;
+left: 734px;
+font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-transform: uppercase;
+    z-index: 1;
+    olor: #f5deb3;
+}
+
 .header {
  width: 1280px;
 }
@@ -63,7 +75,8 @@ font-size: 13px;
 font-weight: 400;
 line-height: 15px;
 text-transform: uppercase;
-  color:wheat;
+color:wheat;
+z-index: 1;
 }
 
 .fly_santa {
