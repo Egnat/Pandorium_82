@@ -29,14 +29,14 @@ cardOff/*photoOff*/.addEventListener('click', function showHide(event) {
 //5 пример с AdjacentHTML
 //создаем переменну с контентом, который будет в новом элементе 
 //<article></article>,который будет расположен над <img class"friends">
-const content = "С Новым годом !";
+const content = "₡ наступающим ❗";
 document.querySelector(".garland-9").insertAdjacentHTML("beforebegin", 
 `<article class="text-friends"> ${content} </article>`);
 const textFriends = document.querySelector('.text-friends');
-  textFriends.style ="font-size: 129px";
+  textFriends.style ="font-size: 121px";
   //textFriends.style.position ="absolute";
   //textFriends.style.width ="933px";
-  textFriends.style.color = "#ff9800";
+  textFriends.style.color = "#ff4700";
   textFriends.style.top = "2773p";
   //textFriends.style.left = "268px";
   textFriends.style.zIndex = "2";
