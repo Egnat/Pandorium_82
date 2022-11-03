@@ -51,12 +51,15 @@ font {
 position: absolute;
 top: 277px;
 left: 734px;
+z-index: 1;
+olor: #f5deb3;
+
+font-family: 'Nunito Sans';
 font-size: 13px;
-    font-weight: 400;
-    line-height: 15px;
-    text-transform: uppercase;
-    z-index: 1;
-    olor: #f5deb3;
+font-style: italic;
+ont-weight: 400;
+line-height: 15px;
+text-transform: uppercase;
 }
 
 .header {
@@ -71,12 +74,14 @@ width: 100p;
 }
 
 .link {
+color:wheat;
+z-index: 1;
+
+font-family: 'Nunito Sans';
 font-size: 13px;
 font-weight: 400;
 line-height: 15px;
 text-transform: uppercase;
-color:wheat;
-z-index: 1;
 }
 
 .fly_santa {
@@ -397,6 +402,8 @@ box-shadow: 4px 0px 34px 36px #9358e1;
   position: absolute;
   width:1279px;
   left: 268p;
+
+  font-family:"Yeseva One";
   text-align: center;
   text-transform: uppercase;
 }
