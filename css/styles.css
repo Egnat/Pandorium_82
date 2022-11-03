@@ -371,17 +371,17 @@ height: 854px/*100%*/;
 @media screen and (max-width: 1300px) {}
 
 @media screen and (max-width: 1024px) {
-
+html { width: 1280px; }
 }
 
 @media screen and (max-width: 768px) {
-
+html { width: 1280px; }
 }
 
 @media screen and (max-width: 425px) {
-
+html { width: 1280px; }
 }
 
 @media screen and (max-width: 375px) {
-
+html { width: 1280px; }
 }
