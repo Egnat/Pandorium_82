@@ -47,7 +47,7 @@ body {
   -webkit-resizer: /*— изменение размеров*/
 }
 
-link {
+ont {
 position: absolute;
 width: 243px;
 top: 277px;
@@ -239,9 +239,23 @@ top: 202px;
   top: 291px;
 }
 
+.map {
+  position: absolute;
+ width: 290px;
+    height: 166px;
+    top: 203px;
+    left: 12px;
+}
+
+.iframe-map {
+ position: absolute;
+  width: 284px;
+    height: 188px;
+}
+
 .cardOff_christmas-vinok-2 {
 position: absolute;
-top: 53px;
+top: -29px;
 left: 33px;
 margin: 0;
 cursor: pointer;  
