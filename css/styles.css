@@ -451,7 +451,7 @@ height: 500px;
 cursor: grabbing;
 }
 
-.footer {
+ooter {
   position: absolute;
   width: 1280px;
   top: 3706px;
@@ -459,7 +459,7 @@ cursor: grabbing;
   z-index: 1;
 }
 
-.menu-footer {
+enu-ooter {
 display: flex;
 justify-content: space-evenly;
 align-items: center;
