@@ -65,9 +65,10 @@ text-transform: uppercase;
 
 .header {
  width: 1280px;
+ background-color: #00000052;
 }
 
-.navigation {
+.navigation, .menu-footer {
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -239,23 +240,9 @@ top: 202px;
   top: 291px;
 }
 
-.map {
-  position: absolute;
- width: 290px;
-    height: 166px;
-    top: 203px;
-    left: 12px;
-}
-
-.iframe-map {
- position: absolute;
-  width: 284px;
-    height: 188px;
-}
-
 .cardOff_christmas-vinok-2 {
 position: absolute;
-top: -29px;
+top: 78px;
 left: 33px;
 margin: 0;
 cursor: pointer;  
@@ -430,19 +417,53 @@ bottom: 908px;
 z-index: 1;
 }
 
-figure_friends {
-idth:100%;
-height: 854p;
-border-radius: 14px;
-box-shadow: 4px 0px 34px 36px #9358e1;
-margin: 0 auto;
-
-bject-fit: cover; 
+.map-content {
+  position: absolute;
+  width: 1280px;
+    height: 957px;
+  top: 2754px;
+  box-shadow: 0px 0px 27px 26px #1f0b42e0;
 }
 
-friends {
- idth: /*1202px100%*/;
-height: 854px/*100%*/;      
+.filter-img {
+  width: 1280px;
+    height: 957px;
+    margin: 0;
+  background-image: url('https://sun2.43222.userapi.com/impg/jiJkeqLiBCg08r6quCB9DbJHxYE1veBUzhgu5A/S626TQzlLiY.jpg?size=1280x960&quality=96&sign=04bb06adb28036110e7303b7cbe363f1&type=album');
+background-size: cover;
+ filter: brightness(0.2); 
+}
+
+.map {
+position: absolute;
+width: 800px;
+height: 500px;
+top: 232px;
+left: 254px;
+z-index: 1;
+cursor: grab;
+}
+
+.iframe-map {
+ position: absolute;
+ width: 800px;
+height: 500px;
+cursor: grabbing;
+}
+
+.footer {
+  position: absolute;
+  width: 1280px;
+  top: 3706px;
+  background-color: #00000052;
+  z-index: 1;
+}
+
+.menu-footer {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100p;
 }
 
 
