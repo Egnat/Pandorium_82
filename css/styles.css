@@ -651,8 +651,8 @@ width: 100p;
 
 
 @media (hover: none) { 
-.mask-three { cursor: pointer; }
-.mask-img { cursor: pointer; }
+.mask-three { cursor: pointer; }/*на планшете курсор не появился*/
+.mask-img { cursor: pointer; }/*на планшете курсор не появился*/
 }
 
 @media screen and (max-width: 1300px) {}

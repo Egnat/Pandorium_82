@@ -7,6 +7,8 @@
 }*/
 //document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
 
+document.addEventListener("touchstart", function() {}, true);
+
 function blinkeded() {
   const section = document./*getElementById*/querySelector('.continer-salute');
   if (section.style.visibility == "hidden") {
