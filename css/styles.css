@@ -316,8 +316,8 @@ border: 8px double #f00;
 border-radius: 35px;
 box-shadow: 0px 0px 42px 21px #9c27b0; 
 overflow: hidden;
--webkit-transition: all 0.5s ease;
-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;/*медленное уменьшение фото*/ 
+transition: all 0.5s ease;/*медленное уменьшение фото*/ 
 cursor: pointer;
 }
 
@@ -344,71 +344,111 @@ z-index: -1;
 }
 
 .children {
-  position: absolute;
-  width: 453px;
-    height: 371px;
-    top: 779px;
-    left: 129px;
-    border: 10px solid #dbdb3a;
-    border-radius: 32px;
-    box-shadow: 0px 0px 20px 22px chartreuse;
+position: absolute;
+width: 453px;
+height: 371px;
+top: 779px;
+left: 129px;
+border: 10px solid #dbdb3a;
+border-radius: 32px;
+box-shadow: 0px 0px 20px 22px chartreuse;
+}
+
+/* Настройки для переворота рамки у фото*/ 
+.mask{
+--uiMaskClipPath: var(--maskClipPath);
+box-sizing: var(--maskBoxSizing, border-box);
+display: var(--maskDisplay, inline-flex);
+padding: var(--maskStrokeThickness, 3px);
+clip-path: var(--uiMaskClipPath);
+background-color: var(--maskStrokeColor, currentColor);
+--maskStrokeColor: #db7014; /* Цвет рамки */
+--maskStrokeThickness: 5px;/* Ширина рамки */ 
+}
+.mask-img{
+display: block;  
+max-width: 100%;
+clip-path: var(--uiMaskClipPath);
+}
+.mask, 
+.mask-img{
+transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+
+/* Третья рамка */
+.mask-three {
+position: absolute;
+width: 254px;
+height: 335px;
+top: 696px;
+left: 971px;
+cursor: pointer;
+--maskClipPath: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+}
+.mask-three-frame{
+box-shadow: 2px 1px 23px 26px #d92; 
+--maskAnimationDuration: .5s
+}
+.mask-three:hover, 
+.mask-three:focus{
+--maskClipPath: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
 }
 
 .children-1 {
-  position: absolute;
-  width: 1051px;
-    height: 316px;
-    top: 1195px;
-    box-shadow: 2px -2px 17px 10px #bda734;
+position: absolute;
+width: 1051px;
+height: 316px;
+top: 1195px;
+box-shadow: 2px -2px 17px 10px #bda734;
 }
 
 .sharkov {
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  top: 1196px;
-  z-index: 1;
+position: absolute;
+width: 300px;
+height: 200px;
+top: 1196px;
+z-index: 1;
 }
 
 .child-1 {
-  position: absolute;
-  width: 368px;
-    height: 367px;
-  top: 1141px;
-  left: 912px;
-  box-shadow: 5px 0px 17px 7px #673ab7;
+position: absolute;
+width: 368px;
+height: 367px;
+top: 1141px;
+left: 912px;
+box-shadow: 5px 0px 17px 7px #673ab7;
 }
 
-.child {
-  position: absolute;
-  width: 281px;
-    height: 327px;
-    top: 406px;
-    left: 955px;
-    box-shadow: 0px 0px 33px 15px gold;
-    border: 3px solid #0a640a;
+.child{
+width: 281px;
+height: 327px; 
+position: absolute;
+top: 406px;
+left: 955px;
+box-shadow: 0px 0px 33px 15px gold;
+border: 3px solid #0a640a;   
 }
 
 .video-1 {
-  position: absolute;
-  width: 582px;
-    height: 328px;
-    top: 787px;
-    left: 667px;
-    border-radius: 41px;
-    box-shadow: 0px 0px 29px 10px #ff0081;
+position: absolute;
+width: 582px;
+height: 328px;
+top: 787px;
+left: 667px;
+border-radius: 41px;
+box-shadow: 0px 0px 29px 10px #ff0081;
 }
 
 .gouingSanta-2 {
-    position: absolute;
-    width: 203px;
-    top: 1259px;
-    left: 1039px;
-    animation-name: gouing;
-    animation-delay: 500s;
-    animation: gouing 45s infinite;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    z-index: 1;
+position: absolute;
+width: 203px;
+top: 1259px;
+left: 1039px;
+animation-name: gouing;
+animation-delay: 500s;
+animation: gouing 45s infinite;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+z-index: 1;
 }
 
 @keyframes gouing {
@@ -429,13 +469,13 @@ box-shadow: 4px 0px 34px 36px #9358e1;
 }
 
 .text-friends {
-  position: absolute;
-  width:1279px;
-  left: 268p;
+position: absolute;
+width:1279px;
+left: 268p;
 
-  font-family:"Yeseva One";
-  text-align: center;
-  text-transform: uppercase;
+font-family:"Yeseva One";
+text-align: center;
+text-transform: uppercase;
 }
 
 .garland-9 {
@@ -446,11 +486,11 @@ z-index: 1;
 }
 
 .map-content {
-  position: absolute;
-  width: 1280px;
-  height: 957px;
-  top: 2754px;
-  ox-shadow: 0px 0px 27px 26px #1f0b42e0;
+position: absolute;
+width: 1280px;
+height: 957px;
+top: 2754px;
+ox-shadow: 0px 0px 27px 26px #1f0b42e0;
 }
 
 .filter-img {
@@ -476,8 +516,8 @@ box-shadow: 0px 0px 51px 18px #ff0052;
 }
 
 .iframe-map {
- position: absolute;
- width: 800px;
+position: absolute;
+width: 800px;
 height: 500px;
 cursor: grabbing;
 }
