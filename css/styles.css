@@ -576,16 +576,45 @@ top: 2754px;
 ox-shadow: 0px 0px 27px 26px #1f0b42e0;
 }
 
+.gouingSanta {
+position: absolute;
+width: 153px;
+bottom: 460px;
+z-index: 2;
+animation-name: go;
+animation-delay: 500s;
+animation: go 45s infinite;
+}
+
+@keyframes go {
+from { left:179px; }
+to { left:444px; } /*ставим размер экрана, чтобы гугл исчезал если нужно*/
+}
+
 .filter-img {
 width: 1280px;
 height: 957px;
 margin: 0;
 background-image: url('https://sun2.43222.userapi.com/impg/jiJkeqLiBCg08r6quCB9DbJHxYE1veBUzhgu5A/S626TQzlLiY.jpg?size=1280x960&quality=96&sign=04bb06adb28036110e7303b7cbe363f1&type=album');
 background-size: cover;
-filter: opacity(0.3);/* цвет фото под цвет боди и регулируется затемненность */ 
+ilter: opacity(0.3);/* цвет фото под цвет боди и регулируется затемненность */ 
 ilter: brightness(0.2);/*делает затемнение фото черного цвета*/
 ilter:contrast(1.5);/*делает пелину блока под цвет его бэкграунда, ножно блоку добавить background-color*/
+-webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать*/  
 }
+
+/*.filter-img:hover {  
+    -webkit-filter: grayscale(0%);  
+}  
+.filter-img:hover {  
+    -webkit-filter: sepia(0%);   
+}  
+.filter-img:hover {  
+    -webkit-filter: brightness(0%);   
+}  
+.filter-img:hover {  
+    -webkit-filter: contrast(100%);   
+}*/  
 
 .map {
 position: absolute;
