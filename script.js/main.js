@@ -8,7 +8,8 @@
 //document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
 
 const div = document.querySelector('.beauty-rotate'); 
-div/*document*/.addEventListener("touchstart", function() {
+div/*document*/.addEventListener('touchstart'/*'mousemove'*/, /*function*/(event) => {
+  alert('ok');
 div.style.cursor = "pointer";
 }, true);
 
