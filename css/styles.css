@@ -459,7 +459,7 @@ width: 368px;
 height: 367px;
 top: 1141px;
 left: 912px;
-box-shadow: 5px 0px 17px 7px #673ab7;
+box-shadow: /*inset*/5px 0px 17px 7px #673ab7;/*inset дает тень внутри картинки*/
 }
 
 .child{
@@ -597,10 +597,10 @@ height: 957px;
 margin: 0;
 background-image: url('https://sun2.43222.userapi.com/impg/jiJkeqLiBCg08r6quCB9DbJHxYE1veBUzhgu5A/S626TQzlLiY.jpg?size=1280x960&quality=96&sign=04bb06adb28036110e7303b7cbe363f1&type=album');
 background-size: cover;
+-webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать*/  
 ilter: opacity(0.3);/* цвет фото под цвет боди и регулируется затемненность */ 
 ilter: brightness(0.2);/*делает затемнение фото черного цвета*/
 ilter:contrast(1.5);/*делает пелину блока под цвет его бэкграунда, ножно блоку добавить background-color*/
--webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать*/  
 }
 
 /*.filter-img:hover {  
@@ -650,6 +650,9 @@ width: 100p;
 }
 
 
+@media (hover: none) { 
+.children { cursor: pointer; }
+}
 
 @media screen and (max-width: 1300px) {}
 
