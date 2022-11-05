@@ -8,7 +8,7 @@
 //document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
 
 const cardOn = document.querySelector('.beauty-rotate'); 
-document.addEventListener("touchstart", function() {
+cardOn/*document*/.addEventListener("touchstart", function() {
 cardOn.style.cursor = "pointer";
 }, true);
 
