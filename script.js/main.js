@@ -7,7 +7,10 @@
 }*/
 //document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
 
-document.addEventListener("touchstart", function() {}, true);
+const cardOn = document.querySelector('.beauty-rotate'); 
+document.addEventListener("touchstart", function() {
+cardOn.style.cursor = "pointer";
+}, true);
 
 function blinkeded() {
   const section = document./*getElementById*/querySelector('.continer-salute');
