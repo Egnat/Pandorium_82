@@ -291,19 +291,47 @@ position: absolute;
     height: 317px;
     top: 397px;
     left:39px;
+    z-index: 1;
+    cursor: pointer;
     box-shadow: 2px 0px 40px 17px #e38a8a;
-    border: 11px solid #00b8ff
+    border: 11px solid #00b8ff;
+    -webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.girl-on-sofa:hover {
+width: 223px;
+height: 185px;
+transform:matrix(3, 0, 0, 3, 277, -1);  
+transition: all 2s ease-out .2s;/*фото медленно увеличивается*/ 
+}
+
+.beauty-rotate {
+ position: absolute; 
+ width: 434px;
+ height: 287px;  
+ top: 416px;
+left: 431px;
+border: 8px double #f00;
+border-radius: 35px;
+box-shadow: 0px 0px 42px 21px #9c27b0; 
+overflow: hidden;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+cursor: pointer;
+}
+
+.beauty-rotate:hover {
+border-radius: 50%;
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+transition: all 2s ease-out .2s;/*фото медленно увеличивается*/
+ransform:matrix(5, 0, 0, 4, 311, 39);   
 }
 
 .reklama {
-      position: absolute;
-    width: 434px;
-    height: 287px;
-    top: 416px;
-    left: 431px;
-    border: 8px solid #f00;
-    border-radius: 35px;
-    box-shadow: 0px 0px 42px 21px #9c27b0;
+width: 434px;
+height: 287px;   
 }
 
 .garland-3 {
@@ -420,19 +448,20 @@ z-index: 1;
 .map-content {
   position: absolute;
   width: 1280px;
-    height: 957px;
+  height: 957px;
   top: 2754px;
   ox-shadow: 0px 0px 27px 26px #1f0b42e0;
 }
 
 .filter-img {
-  width: 1280px;
-    height: 957px;
-    margin: 0;
-  background-image: url('https://sun2.43222.userapi.com/impg/jiJkeqLiBCg08r6quCB9DbJHxYE1veBUzhgu5A/S626TQzlLiY.jpg?size=1280x960&quality=96&sign=04bb06adb28036110e7303b7cbe363f1&type=album');
+width: 1280px;
+height: 957px;
+margin: 0;
+background-image: url('https://sun2.43222.userapi.com/impg/jiJkeqLiBCg08r6quCB9DbJHxYE1veBUzhgu5A/S626TQzlLiY.jpg?size=1280x960&quality=96&sign=04bb06adb28036110e7303b7cbe363f1&type=album');
 background-size: cover;
- ilter: brightness(0.2);
- filter: opacity(0.3); 
+filter: opacity(0.3);/* цвет фото под цвет боди и регулируется затемненность */ 
+ilter: brightness(0.2);/*делает затемнение фото черного цвета*/
+ilter:contrast(1.5);/*делает пелину блока под цвет его бэкграунда, ножно блоку добавить background-color*/
 }
 
 .map {
@@ -467,6 +496,7 @@ justify-content: space-evenly;
 align-items: center;
 width: 100p;
 }
+
 
 
 @media screen and (max-width: 1300px) {}
