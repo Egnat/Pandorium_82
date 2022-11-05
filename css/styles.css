@@ -651,7 +651,8 @@ width: 100p;
 
 
 @media (hover: none) { 
-.children { cursor: pointer; }
+.mask-three { cursor: pointer; }
+.mask-img { cursor: pointer; }
 }
 
 @media screen and (max-width: 1300px) {}
