@@ -344,54 +344,97 @@ z-index: -1;
 }
 
 .children {
+osition: absolute;
+width: 453px;
+height: 371px;
+op: 779px;
+eft: 129px;
+order: 10px solid #dbdb3a;
+border-radius: 32px;
+ox-shadow: 0px 0px 20px 22px chartreuse;
+}
+
+/* Настройки маркированного списка */
+.hover-effect-scale {
 position: absolute;
 width: 453px;
 height: 371px;
 top: 779px;
 left: 129px;
+padding: 0;
 border: 10px solid #dbdb3a;
-border-radius: 32px;
+border-radius: 58px;
+margin: 0 auto;
 box-shadow: 0px 0px 20px 22px chartreuse;
-}
-
-/* Настройки для переворота рамки у фото*/ 
-.mask{
---uiMaskClipPath: var(--maskClipPath);
-box-sizing: var(--maskBoxSizing, border-box);
-display: var(--maskDisplay, inline-flex);
-padding: var(--maskStrokeThickness, 3px);
-clip-path: var(--uiMaskClipPath);
-background-color: var(--maskStrokeColor, currentColor);
---maskStrokeColor: #db7014; /* Цвет рамки */
---maskStrokeThickness: 5px;/* Ширина рамки */ 
-}
-.mask-img{
-display: block;  
-max-width: 100%;
-clip-path: var(--uiMaskClipPath);
-}
-.mask, 
-.mask-img{
-transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
-}
-
-/* Третья рамка */
-.mask-three {
-position: absolute;
-width: 254px;
-height: 335px;
-top: 696px;
-left: 971px;
 cursor: pointer;
---maskClipPath: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+
+list-style: none;
+text-align: center;
 }
-.mask-three-frame{
-box-shadow: 2px 1px 23px 26px #d92; 
---maskAnimationDuration: .5s
+.hover-effect-scale li {
+position: relative;
+display: inline-block;
+ackground-color: #fff;
+margin: 0;
+border-radius: 48px;
+order: 5px solid #fff;
+ox-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+overflow: hidden;
 }
-.mask-three:hover, 
-.mask-three:focus{
---maskClipPath: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
+/* Заголовок, текст и ссылка */
+.hover-effect-scale li h3{
+color: #fff;
+margin: 5px;
+}
+.hover-effect-scale li p{
+color: #fff;
+margin: 5px;
+}
+.hover-effect-scale li a {
+display: block;
+padding: 15px;
+color: #fff;
+background: #000;
+border-radius: 5px;
+margin: 0 auto;
+transition: all 0.4s ease-in-out;
+
+text-decoration: none;
+}
+.hover-effect-scale li a:hover {
+background: #454545;
+color: #fff;
+}
+/* Выезжающий блок с текстом */ 
+.hover-effect-scale li > div {
+position: absolute;
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+height: 100%;
+   
+}
+.hover-effect-scale li:hover > div {
+position: absolute;
+top: 0;
+left: 0;
+overflow: hidden;
+}
+.hover-effect-scale li div {
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.35); /* Фон блока при наведении */
+transition: all 0.4s ease-in-out;
+color: #fff;
+}
+.hover-effect-scale li img {
+transition: all 0.2s linear;
+}
+.hover-effect-scale li:hover img {
+transform: scale(1.3);
+}
+.hover-effect-scale li:hover div {
+opacity: 1;
 }
 
 .children-1 {
@@ -427,6 +470,46 @@ top: 406px;
 left: 955px;
 box-shadow: 0px 0px 33px 15px gold;
 border: 3px solid #0a640a;   
+}
+
+/* Настройки для переворота рамки у фото*/ 
+.mask{
+--uiMaskClipPath: var(--maskClipPath);
+box-sizing: var(--maskBoxSizing, border-box);
+display: var(--maskDisplay, inline-flex);
+padding: var(--maskStrokeThickness, 3px);
+clip-path: var(--uiMaskClipPath);
+background-color: var(--maskStrokeColor, currentColor);
+--maskStrokeColor: #db7014; /* Цвет рамки */
+--maskStrokeThickness: 5px;/* Ширина рамки */ 
+}
+.mask-img{
+display: block;  
+max-width: 100%;
+clip-path: var(--uiMaskClipPath);
+}
+.mask, 
+.mask-img{
+transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+
+/* Третья рамка */
+.mask-three {
+position: absolute;
+width: 254px;
+height: 335px;
+top: 405px;
+left: 971px;
+cursor: pointer;
+--maskClipPath: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+}
+.mask-three-frame{
+box-shadow: 2px 1px 23px 26px #d92; 
+--maskAnimationDuration: .5s
+}
+.mask-three:hover, 
+.mask-three:focus{
+--maskClipPath: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
 }
 
 .video-1 {
