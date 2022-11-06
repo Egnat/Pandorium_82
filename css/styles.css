@@ -286,16 +286,16 @@ position: absolute;
 }
 
 .girl-on-sofa {
-  position: absolute;
-   width: 300px;
-    height: 317px;
-    top: 397px;
-    left:39px;
-    z-index: 1;
-    cursor: pointer;
-    box-shadow: 2px 0px 40px 17px #e38a8a;
-    border: 11px solid #00b8ff;
-    -webkit-transition: all 0.5s ease;
+position: absolute;
+width: 300px;
+height: 317px;
+top: 397px;
+left:39px;
+border: 11px solid #00b8ff;
+z-index: 1;
+cursor: pointer;
+box-shadow: 2px 0px 40px 17px #e38a8a;
+-webkit-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
 
@@ -321,8 +321,8 @@ transition: all 0.5s ease;/*медленное уменьшение фото*/
 cursor: pointer;
 }
 
-.beauty-rotate:hover, .beauty-rotate:active,.reklama:hover, .reklama:active  {
-width: 500px;
+.beauty-rotate:hover, .beauty-rotate:active, .reklama:hover, .reklama:active {
+width: 500px;/*увеличивается и без помощи active, hover - фотка крутится и увеличивается */
 height: 450px;
 top: 343px; 
 left: 392px;
@@ -516,6 +516,8 @@ box-shadow: 2px 1px 23px 26px #d92;
 }
 .mask-three:hover, 
 .mask-three:focus{
+transform:matrix(2, 0, 0, 2, -100, -120);  
+transition: all 2s ease-out .2s;/*фото медленно увеличивается*/ 
 --maskClipPath: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
 }
 
