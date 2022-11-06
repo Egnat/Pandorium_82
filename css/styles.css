@@ -643,12 +643,34 @@ height: 500px;
 cursor: grabbing;
 }
 
-ooter {
+.footer {
   position: absolute;
   width: 1280px;
   top: 3706px;
-  background-color: #00000052;
+  background-color: #3e226e94;
   z-index: 1;
+  ext-align: center; 
+  color: wheat;
+}
+
+.text-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+font-size: 22px;
+list-style-type: none;
+ont-family: "Nunito Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
+line-height: 0px;
+list-style: none;/*Убирает точки у ли*/
+text-decoration-line: none;
+}
+
+.letters {
+padding-right: 36px;
+text-decoration-line: none;
 }
 
 enu-ooter {
