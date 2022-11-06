@@ -65,7 +65,7 @@ text-transform: uppercase;
 
 .header {
  width: 1280px;
- background-color: #00000052;
+ background-color: #3e226e94/*#3629a952*/;
 }
 
 .navigation, .menu-footer {
@@ -646,7 +646,7 @@ cursor: grabbing;
 .footer {
 position: absolute;
 width: 1280px;
-top: 3706px;
+top: 3710px;
 background-color: #3e226e94;
 z-index: 1;
 ext-align: center;/*нужен если будет h1, h2, p*/ 
