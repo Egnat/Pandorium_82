@@ -76,7 +76,7 @@ width: 100p;
 }
 
 .link {
-color:wheat;
+color: #e3b873;
 z-index: 1;
 
 font-family: 'Nunito Sans';
@@ -644,19 +644,20 @@ cursor: grabbing;
 }
 
 .footer {
-  position: absolute;
-  width: 1280px;
-  top: 3706px;
-  background-color: #3e226e94;
-  z-index: 1;
-  ext-align: center; 
-  color: wheat;
+position: absolute;
+width: 1280px;
+top: 3706px;
+background-color: #3e226e94;
+z-index: 1;
+ext-align: center;/*нужен если будет h1, h2, p*/ 
+/*-webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки */
 }
 
 .text-footer {
 display: flex;
 justify-content: space-between;
 align-items: center;
+color: #e3b873;
 
 font-size: 22px;
 list-style-type: none;
