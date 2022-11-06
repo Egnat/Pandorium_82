@@ -40,11 +40,12 @@
 /*::-webkit-resizer { : #32CD32; } 7 - изменение размеров*/ 
 
 body {
-  background-image: url('https://highstar.ru/pictures/snejinki/09.gif');
-  margin: 0 auto;
-  box-sizing: border-box;
-  verflow: hidden;/*убирает полностью прокрутку с экрана*/
-  -webkit-resizer: /*— изменение размеров*/
+margin: 0 auto;
+background-image: url('https://highstar.ru/pictures/snejinki/09.gif');
+background-size: cover;  
+box-sizing: border-box;
+verflow: hidden;/*убирает полностью прокрутку с экрана*/
+-webkit-resizer: /*— изменение размеров*/
 }
 
 ont {
