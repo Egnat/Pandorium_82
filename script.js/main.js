@@ -7,10 +7,13 @@
 }*/
 //document.write(a_href);// создается ссылка в штмл зеленого цвета с выводом alert("Привет!")
 
+//document.addEventListener('touchstart', function (event) {} // срабатывает, когда водишь по любому месту на экране
+// Касание пальцем элемента на планшете, но курсор не появляется, только срабатывает алерт
 const div = document.querySelector('.beauty-rotate'); 
-div/*document*/.addEventListener('touchstart'/*'mousemove'*/, /*function*/(event) => {
+div/*document*/.addEventListener('touchstart'/*'mousemove'*/,(event) => {
+  const div = document.querySelector('.beauty-rotate'); 
   alert('ok');
-div.style.cursor = "pointer";
+div.style.cursor = "grab";
 }, true);
 
 function blinkeded() {

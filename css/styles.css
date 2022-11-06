@@ -321,13 +321,16 @@ transition: all 0.5s ease;/*медленное уменьшение фото*/
 cursor: pointer;
 }
 
-.beauty-rotate:hover, .beauty-rotate:active {
+.beauty-rotate:hover, .beauty-rotate:active,.reklama:hover, .reklama:active  {
+width: 500px;
+height: 450px; 
 border-radius: 50%;
+background-color: gold;
+z-index: 1;
 -webkit-transform: rotate(360deg);
 transform: rotate(360deg);
 transition: all 2s ease-out .2s;/*фото медленно увеличивается*/
-ransform:matrix(5, 0, 0, 4, 311, 39);
-cursor: grab;   
+ransform:matrix(5, 0, 0, 4, 311, 39);  
 }
 
 .reklama {
