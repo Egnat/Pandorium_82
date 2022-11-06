@@ -11,7 +11,7 @@
 // Касание пальцем элемента на планшете, но курсор не появляется, только срабатывает алерт
 const div = document.querySelector('.beauty-rotate'); 
 div/*document*/.addEventListener('touchstart'/*'mousemove'*/,(event) => {
-  const div = document.querySelector('.beauty-rotate'); 
+  //const div = document.querySelector('.beauty-rotate'); 
   alert('ok');
 div.style.cursor = "grab";
 }, true);
