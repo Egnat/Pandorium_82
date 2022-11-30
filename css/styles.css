@@ -94,25 +94,48 @@ left: 17p;
 margin: 0 auto;
 }
 
-img.flying_santa {
+/*Элемент двигается по всей странице туда-обратно с разворотом*/
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(85% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+/*img*/.flying_santa {
 position: absolute;
 width: 650p;
-height: 64px;
+height: 64p;
 /*animation-duration: 100s; /*регулируется быстрота и медлительность движения при включенном js*/
-animation-name: mymove;
-top: 13px;
+/*animation-name: mymove;*/
+top: 44px;
 right: 242p;
 z-index: 2;
 cursor: pointe;
-animation-delay: 500s;/*время через сколько запустится анимация*/
-animation: mymove 75s infinite; /*регулируется быстрота и медлительность движения*/
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+/*animation-delay: 500s;время через сколько запустится анимация*/
+/*animation: mymove 75s infinite; /*регулируется быстрота и медлительность движения*/
 /*animation-iteration-count: mymove ; /*сколько раз сработает, но пока не работает*/ 
 }
-
-@keyframes mymove {
+/*@keyframes mymove {
 from { left:0px; }
-to { left:927px; } /*ставим размер экрана, чтобы гугл исчезал если нужно*/
-}
+to { left:927px; } /*ставим размер экрана, чтобы гугл исчезал если нужно*
+}*/
 
 .block_falling-gifts {
   position: absolute;
@@ -167,7 +190,7 @@ position: absolute;
   display: flex;
   justify-content: space-between; 
   top: 33px;
-  left: 6p;
+ left: 29px;
   z-index: 1;  
 }
 
@@ -305,6 +328,7 @@ width: 223px;
 height: 185px;
 transform:matrix(3, 0, 0, 3, 277, -1);  
 transition: all 2s ease-out .2s;/*фото медленно увеличивается*/ 
+ransform: rotate3d(12, 67, 3, 222deg); /*им никто не пользуется*/
 }
 
 .beauty-rotate {
@@ -692,16 +716,163 @@ width: 100p;
 
 @media screen and (max-width: 1024px) {
 .text-friends { left: 206p; }
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(103% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flying_santa {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+}
+
+@media screen and (max-width: 800px) {
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(133% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flying_santa {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
 }
 
 @media screen and (max-width: 768px) {
 .text-friends { left: 206p; }
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(140% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flying_santa {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
 }
 
 @media screen and (max-width: 425px) {
 .text-friends { left: 206p; }
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(250% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flying_santa {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
 }
 
 @media screen and (max-width: 375px) {
 .text-friends { left: 206p; }
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(290% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flying_santa {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
 }
