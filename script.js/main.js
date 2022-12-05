@@ -78,3 +78,24 @@ const time = setInterval(() => {
     clearInterval(time); // остановить setInterval
   }
 }, 2000);
+
+//Смена цвета у слов // массив цветов
+let colorNames = ["blue", "cyan", "red", "gold", "green", "yellow"];
+
+// функция поиска random-числа
+const random = (min, max) => {
+  max = colorNames.length - 1;
+  const rand = min + Math.round(Math.random() * (max - min));
+  return rand;
+};
+
+// найти элементы для изменения свойств
+let paragraphs = document.getElementsByClassName("text-footer");
+
+// менять цвет каждую секунду, присвоив каждому эл-ту массива paragraphs новое значение
+setInterval(() => {
+  for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = colorNames[random(0)];
+  }
+}, 3000);
+console.log(colorNames);
