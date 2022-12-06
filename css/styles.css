@@ -672,7 +672,7 @@ cursor: grabbing;
 position: absolute;
 width: 1280px;
 top: 3710px;
-background-color: #3e226e94;
+background-color: /*#5f0fe98a*/#3e226e94;
 z-index: 1;
 ext-align: center;/*нужен если будет h1, h2, p*/ 
 /*-webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки */

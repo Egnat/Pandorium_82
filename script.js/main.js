@@ -90,7 +90,7 @@ const random = (min, max) => {
 };
 
 // найти элементы для изменения свойств
-let paragraphs = document.getElementsByClassName("text-footer");
+let paragraphs = document.getElementsByClassName("letters");/*если поставить вместо letters text-footer, то все буквы будет мигать одинаково*/
 
 // менять цвет каждую секунду, присвоив каждому эл-ту массива paragraphs новое значение
 setInterval(() => {
